@@ -12,7 +12,7 @@ import org.junit.runner.RunWith;
                 "me.jvt.cucumber.report.PrettyReports:target/cucumber"
         },
         features = "src/test/resources/features",
-        glue = "com/project_name/step_definitions",
+        glue = "com/VyTrack/step_definitions",
         dryRun = true,
         tags = " @wip",
         publish = true //generating a report with public link
