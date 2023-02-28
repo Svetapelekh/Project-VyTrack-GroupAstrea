@@ -6,13 +6,13 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LoginPage {
+public class LoginPage  {
 
-    public LoginPage(){
+    public LoginPage() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy(id="prependedInput")
+    @FindBy(xpath = "//input[@type='text']")
     public WebElement userName;
 
 
@@ -25,7 +25,8 @@ public class LoginPage {
 
 
     public void login(String userNameStr, String passwordStr) {
-        userName.sendKeys(userNameStr);
+
+       userName.sendKeys(userNameStr);
         password.sendKeys(passwordStr);
         submit.click();
         // verification that we logged
