@@ -1,7 +1,7 @@
 package com.VyTrack.step_definitions;
 
 
-import com.VyTrack.pages.US3PinbarPage;
+import com.VyTrack.pages.US3_PinbarPage;
 import com.VyTrack.utilities.BrowserUtils;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
@@ -10,7 +10,7 @@ import org.junit.Assert;
 
 
 public class US3_stepDefinitions {
-    US3PinbarPage us3PinbarPage = new US3PinbarPage();
+    US3_PinbarPage us3PinbarPage = new US3_PinbarPage();
 
     @When("the user click on {string} on the homepage")
     public void the_user_click_on_on_the_homepage(String str) {
