@@ -3,6 +3,7 @@ package com.VyTrack.step_definitions;
 import com.VyTrack.pages.BasePage;
 import com.VyTrack.pages.LoginPage;
 import com.VyTrack.utilities.ConfigurationReader;
+import com.VyTrack.utilities.Driver;
 import io.cucumber.java.en.Given;
 
 public class LoginStepDefs  {
@@ -11,6 +12,7 @@ public class LoginStepDefs  {
     @Given("the user is on the login page")
     public void the_user_is_on_the_login_page() {
         System.out.println("Login to app in Before method");
+        Driver.getDriver().get(ConfigurationReader.getProperty("url"));
     }
 
     @Given("the user logged in as {string}")
