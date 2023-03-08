@@ -1,21 +1,19 @@
 package com.VyTrack.step_definitions;
 
 import com.VyTrack.pages.BasePage;
-import com.VyTrack.pages.VehicleModelPage;
+import com.VyTrack.pages.US05_VehicleModelPage;
 import com.VyTrack.utilities.BrowserUtils;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import java.io.IOException;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 
-public class US5_step_definitions extends BasePage {
+public class US05_step_definitions extends BasePage {
 
     @When("user navigate to {string}")
     public void user_navigate_to(String string) {
@@ -30,11 +28,11 @@ public class US5_step_definitions extends BasePage {
 
         System.out.println("expectedColumnNames = " + expectedColumnNames);
 
-        VehicleModelPage vehicleModelPage = new VehicleModelPage();
+        US05_VehicleModelPage US05VehicleModelPage = new US05_VehicleModelPage();
 
-        List<WebElement> webElementList = Arrays.asList(vehicleModelPage.modelName_Header, vehicleModelPage.make_Header, vehicleModelPage.canBeRequested_Header,
-                vehicleModelPage.CVVI_Header, vehicleModelPage.CO2Fee_Header, vehicleModelPage.costDepreciated_Header,
-                vehicleModelPage.totalCostDepreciated_Header,vehicleModelPage.CO2Emissions_Header, vehicleModelPage.fuelType_Header,vehicleModelPage.vendors_Header);
+        List<WebElement> webElementList = Arrays.asList(US05VehicleModelPage.modelName_Header, US05VehicleModelPage.make_Header, US05VehicleModelPage.canBeRequested_Header,
+                US05VehicleModelPage.CVVI_Header, US05VehicleModelPage.CO2Fee_Header, US05VehicleModelPage.costDepreciated_Header,
+                US05VehicleModelPage.totalCostDepreciated_Header, US05VehicleModelPage.CO2Emissions_Header, US05VehicleModelPage.fuelType_Header, US05VehicleModelPage.vendors_Header);
 
         String textFromWebElements = "";
 

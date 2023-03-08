@@ -1,18 +1,13 @@
 package com.VyTrack.pages;
 
-import com.VyTrack.utilities.ConfigurationReader;
 import com.VyTrack.utilities.Driver;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+public class US05_VehicleModelPage extends BasePage {
 
-import java.util.List;
-
-public class VehicleModelPage extends BasePage {
-
-    public VehicleModelPage (){
+    public US05_VehicleModelPage(){
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
