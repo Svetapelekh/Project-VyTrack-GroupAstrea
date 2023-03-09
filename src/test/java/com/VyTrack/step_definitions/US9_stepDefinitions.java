@@ -46,14 +46,14 @@ public class US9_stepDefinitions extends BasePage {
 
     @And("the user see error message1 {string}")
     public void the_user_see_error_message(String actualMessage) {
-        String expectedMassage = "The value have not to be more than 99.";
+        String expectedMassage = "The value have not to be less than 1.";
         Assert.assertEquals(expectedMassage,actualMessage);
     }
 
 
     @And("the user see error message2 {string}")
     public void theUserSeeErrorMessage(String actualResult) {
-        String expectedResult= "The value have not to be less than 1.";
+        String expectedResult= "The value have not to be more than 99.";
     }
 }
 
