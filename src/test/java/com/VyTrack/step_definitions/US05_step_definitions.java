@@ -5,6 +5,7 @@ import com.VyTrack.pages.US05_VehicleModelPage;
 import com.VyTrack.utilities.BrowserUtils;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import java.io.IOException;
@@ -51,6 +52,8 @@ public class US05_step_definitions extends BasePage {
         }
 
         System.out.println("actualColumnNames = " + actualColumnNames);
+
+        Assert.assertEquals(actualColumnNames,expectedColumnNames);
 
     }
 
