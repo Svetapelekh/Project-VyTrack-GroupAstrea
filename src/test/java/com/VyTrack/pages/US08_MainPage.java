@@ -11,7 +11,7 @@ public class US08_MainPage {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy(xpath = "//span[@class='title title-level-1']//i[@class='fa-puzzle-piece menu-icon']")
+    @FindBy(xpath = "//span[@class='title title-level-1']//i[@class='fa-puzzle-piece menu-icon']/..")
     public WebElement dropdownActivities;
 
     @FindBy(xpath = "//span[text()='Calendar Events']")
@@ -20,10 +20,10 @@ public class US08_MainPage {
     @FindBy(xpath = "//a[@title='Create Calendar event']")
     public WebElement buttonCreateCalendarEvent;
 
-    @FindBy(id = "recurrence-repeat-view3009")
+    @FindBy(xpath = "//input[@data-name='recurrence-repeat']")
     public WebElement checkboxRepeat;
 
-    @FindBy(name = "temp-validation-name-3060")
+    @FindBy(xpath = "//input[@class='recurrence-subview-control__number']")
     public WebElement windowRepeatEvery;
 
 }
