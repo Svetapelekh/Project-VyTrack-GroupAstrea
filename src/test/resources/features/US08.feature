@@ -1,4 +1,4 @@
-@wip
+@US08
 Feature: As a user, I want to create a recurring(repetitive) calendar event.
 
   Background: User is already in the log in page
