@@ -26,4 +26,7 @@ public class US08_MainPage {
     @FindBy(xpath = "//input[@class='recurrence-subview-control__number']")
     public WebElement windowRepeatEvery;
 
+    @FindBy(xpath = "//span[.='This value should not be blank.']")
+    public WebElement errorMessage;
+
 }
