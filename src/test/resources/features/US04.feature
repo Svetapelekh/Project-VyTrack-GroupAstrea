@@ -20,6 +20,7 @@ Feature: As a user, I want to access to Vehicle contracts page
   Scenario: US4AC2TC1 Verify that Drivers should NOT able to access the Vehicle contracts page,
   the app should display “You do not have permission to perform this action.”
     Given the user logged in with username as "user1" and password as "UserUser123"
+    Then the user hovers over "<Fleet>" module and clicks on "<Vehicle Contracts>"
     Then the user should see “You do not have permission to perform this action.”
 
 
