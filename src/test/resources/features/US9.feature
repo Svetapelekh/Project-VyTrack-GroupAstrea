@@ -15,7 +15,7 @@ Feature: As a user, I should see error messages when I enter an invalid integer 
     Then the user click on the "Create Calender Event"
     And  the user click at "RepeatCheckBox"
     Then  the user enter "134" inside the box
-    And  the user see error message1 "The value have not to be more than 1."
+    And  the user see error message1 "The value have not to be more than 99."
 
 
   Scenario: US9AC1TC2 Verify users see error messages if entering invalid integers that more  than 99.
@@ -24,4 +24,4 @@ Feature: As a user, I should see error messages when I enter an invalid integer 
     Then  the user click on the "Create Calender Event"
     And  the user click at "RepeatCheckBox"
     Then  the user enter "-2" inside the box
-    And  the user see error message2 "The value have not to be less than 99."
+    And  the user see error message2 "The value have not to be less than 1."
