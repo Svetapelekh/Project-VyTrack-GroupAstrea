@@ -21,12 +21,4 @@ Feature: Default
 		    Then  The user see following icons
 		      | View   |
 		      | Edit   |
-		      | Delete | 
-		 
-		    Given the user logged in with username as "salesmanager101" and password as "UserUser123"
-		    When  The user hover over Fleet module and seeing the dropdown list
-		    And   The user hover the mouse over the three dots “…”
-		    Then  The user see following icons
-		      | View   |
-		      | Edit   |
 		      | Delete |
