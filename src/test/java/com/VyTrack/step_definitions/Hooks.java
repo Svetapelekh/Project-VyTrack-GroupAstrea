@@ -26,7 +26,7 @@ public class Hooks {
 
         Driver.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 
-        Driver.getDriver().get(ConfigurationReader.getProperty("url"));
+
     }
 
     //@Before (value = "@login", order = 2 )
@@ -40,7 +40,8 @@ public class Hooks {
     @After
     public void teardownMethod(Scenario scenario){
 
-        if (scenario.isFailed()) {
+//        if (scenario.isFailed())
+       {
 
             byte[] screenshot = ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
             scenario.attach(screenshot, "image/png", scenario.getName());
