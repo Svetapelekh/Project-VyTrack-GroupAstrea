@@ -1,4 +1,4 @@
-@wip
+
 Feature: As a user, I should see error messages when I enter an invalid integer into the calendar repeat day input box.
 
   Background: User is already in the log in page
