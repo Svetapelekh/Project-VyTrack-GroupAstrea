@@ -24,5 +24,3 @@ Feature: As a user, I should see error messages when I enter an invalid integer 
     And  the user click at "RepeatCheckBox"
     Then  the user enter "134" inside the box
     And  the user see error message2 "The value have not to be less than 1."
-
-
