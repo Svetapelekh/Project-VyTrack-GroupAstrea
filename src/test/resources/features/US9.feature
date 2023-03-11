@@ -1,4 +1,3 @@
-@wip
 Feature: As a user, I should see error messages when I enter an invalid integer into the calendar repeat day input box.
 
   Background: User is already in the log in page
@@ -25,3 +24,11 @@ Feature: As a user, I should see error messages when I enter an invalid integer 
     And  the user click at "RepeatCheckBox"
     Then  the user enter "-2" inside the box
     And  the user see error message2 "The value have not to be less than 1."
+
+  Scenario: US9AC1TC3 Verify users do not see error messages if entering valid integers.
+    Given the user logged in with username as "user1" and password as "UserUser123"
+    When  the user navigate to "Activities" tab and click on the "Calender Events"
+    Then  the user click on the "Create Calender Event"
+    And  the user click at "RepeatCheckBox"
+    Then  the user enter "15" inside the box
+    And  the user should not see  any error message as "The value have not to be less than 1." or "The value have not to be more than 99."
