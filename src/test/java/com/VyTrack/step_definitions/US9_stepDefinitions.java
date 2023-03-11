@@ -22,12 +22,9 @@ public class US9_stepDefinitions extends BasePage {
 
     }
 
-
     @Then("the user click on the {string}")
     public void the_user_click_on_the(String string) {
-
         us9_errorCalenderMsgPage.createCalendarEventButton.click();
-
     }
 
     @And("the user click at {string}")
@@ -50,16 +47,11 @@ public class US9_stepDefinitions extends BasePage {
         Assert.assertEquals(expectedMassage,actualMessage);
     }
 
-
     @And("the user see error message2 {string}")
     public void theUserSeeErrorMessage(String actualResult) {
         String expectedResult= "The value have not to be less than 1.";
-        Assert.assertEquals(expectedResult, actualResult);
+        Assert.assertEquals(expectedResult,actualResult);
     }
-
-
-
-
 }
 
 
