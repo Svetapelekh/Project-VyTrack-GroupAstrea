@@ -15,8 +15,6 @@ public class LoginPage  {
     @FindBy(xpath = "//input[@type='text']")
     public WebElement userName;
 
-
-
     @FindBy(id="prependedInput2")
     public WebElement password;
 

@@ -17,14 +17,16 @@ public class US9_stepDefinitions extends BasePage {
     public void theUserNavigateToTabAndClickOnThe(String string1, String string2) {
         //BrowserUtils.hover(us9_errorCalenderMsgPage.activitiesButton);
         navigateToModule("Activities", "Calendar Events");
-
         BrowserUtils.sleep(3);
 
     }
-
+ 
     @Then("the user click on the {string}")
     public void the_user_click_on_the(String string) {
+    
         us9_errorCalenderMsgPage.createCalendarEventButton.click();
+
+
     }
 
     @And("the user click at {string}")
@@ -53,8 +55,3 @@ public class US9_stepDefinitions extends BasePage {
         Assert.assertEquals(expectedResult,actualResult);
     }
 }
-
-
-
-
-
