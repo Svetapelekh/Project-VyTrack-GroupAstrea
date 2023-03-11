@@ -54,12 +54,12 @@ public class US9_stepDefinitions extends BasePage {
     @And("the user see error message2 {string}")
     public void theUserSeeErrorMessage(String actualResult) {
         String expectedResult= "The value have not to be less than 1.";
+        Assert.assertEquals(expectedResult, actualResult);
     }
 
-    @And("the user should not see  any error message as {string} or {string}")
-    public void theUserShouldNotSeeAnyErrorMessageAsOr(String arg0, String arg1) {
 
-    }
+
+
 }
 
 
